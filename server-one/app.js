@@ -1,0 +1,14 @@
+const express = require('express');
+const app = express();
+const PORT = 1111;
+
+app.get('/', (req, res) => {
+    return res.status(200).json({
+        message: 'hii this message is from server one'
+    })
+});
+
+app.listen(PORT, () => {
+    console.log(`server one is running on port ${PORT},`);
+    
+})
